@@ -37,5 +37,45 @@ namespace Prueba
             else
                 System.Console.WriteLine(n + " no es número primo");
         }
+        
+        public static void Ejercicio04(int n)
+        {
+            // for (int i =0; i < 90; i++)
+            // { System.Console.WriteLine(i); }
+
+            int i = 0;
+            while (i < 90)
+            {
+                System.Console.WriteLine(5 - i);
+                i++;
+            }
+        }
+
+        public static void Ejercicio05(int n)
+        {
+            for (int i = 0; i < 90; i++)
+            {
+                if (Misc.IsEven(i))
+                    System.Console.WriteLine(-i);
+                else
+                    System.Console.WriteLine(i);
+            }
+        }
+
+        public static void Ejercicio06(int n)
+        {
+            for (int i = 0; i  < 90; i++)
+            { 
+            int n1 = 0;
+            int n2 = 1;
+            {
+                System.Console.WriteLine(n1);
+                System.Console.WriteLine(n2);
+                System.Console.WriteLine(n1 + n2);    
+                System.Console.WriteLine(n2 = n1 + n2);
+                System.Console.WriteLine(n1 = n2 - n1);
+                }
+            }
+        }
     }
 }
