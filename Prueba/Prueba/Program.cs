@@ -10,7 +10,7 @@ namespace Prueba
 
             Ejercicios.Ejercicio2(20);
 
-            Maths.IsPrime(1337);
+            Ejercicios.Ejercicio03(657);
         }
     }
 }

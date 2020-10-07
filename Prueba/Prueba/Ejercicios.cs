@@ -27,5 +27,15 @@ namespace Prueba
                 i++;
             }
         }
+
+        // Ejercicio: Hacer un programa que imprima si un numero es primo o no
+
+        public static void Ejercicio03(int n)
+        {
+            if (Misc.IsPrime(n))
+                System.Console.WriteLine(n + " es un número primo.");
+            else
+                System.Console.WriteLine(n + " no es número primo");
+        }
     }
 }
