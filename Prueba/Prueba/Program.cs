@@ -1,11 +1,14 @@
 ﻿using EcuaciónDe2Grado;
+using System.Linq;
 
 namespace Prueba
 {
     class Program
     {
         static void Main(string[] args)
+            
         {
+            /*
             Ejercicios.Ejercicio1();
 
             Ejercicios.Ejercicio2(20);
@@ -26,6 +29,16 @@ namespace Prueba
             s2.name = "Alex";
 
             string ss = s1.getNameTwice();
+            */
+
+            EjerciciosExamen.Suma(2,2);
+            EjerciciosExamen.Resta(2,2);
+            EjerciciosExamen.EsMenor(2,3);
+            EjerciciosExamen.PrimeroMenor(2,3);
+            EjerciciosExamen.Cat("Hola","Que","Tal");
+            EjerciciosExamen.Compare(2,3);
+            // EjerciciosExamen.PrintError();
+            EjerciciosExamen.PrintSerie(10);
         }
     }
 }
