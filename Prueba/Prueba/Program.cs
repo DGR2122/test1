@@ -30,15 +30,22 @@ namespace Prueba
 
             string ss = s1.getNameTwice();
             */
-
+            /*
             EjerciciosExamen.Suma(2,2);
             EjerciciosExamen.Resta(2,2);
             EjerciciosExamen.EsMenor(2,3);
             EjerciciosExamen.PrimeroMenor(2,3);
             EjerciciosExamen.Cat("Hola","Que","Tal");
             EjerciciosExamen.Compare(2,3);
-            // EjerciciosExamen.PrintError();
+            EjerciciosExamen.PrintError(1);
             EjerciciosExamen.PrintSerie(10);
+            EjerciciosExamen.Min3(3, 5, 2);
+            EjerciciosExamen.Min4(3, 5, 2, 8);
+            EjerciciosExamen.PrintSerie2(10);
+            EjerciciosExamen.PrintSerie3(10);
+            EjerciciosExamen.PrintAsteriscos(2);*/
+            EjerciciosExamen.PrintAsteriscos2(4);
+
         }
     }
 }
