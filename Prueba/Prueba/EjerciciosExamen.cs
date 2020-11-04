@@ -191,12 +191,90 @@ namespace Prueba
 
         public static void PrintAsteriscosFormas(int n)
         {
-            for (int i = 0; i < 3; i++) 
+            for (int i = 0; i < n; i++) 
             {
-                for (int j = 1; j <= n; j++) 
-                    Console.Write("*", j);
-                Console.WriteLine(" ");
+                for (int j = 0; j < n; j++) 
+                    System.Console.Write("*", j);
+                System.Console.WriteLine(" ");
             }
         }
+
+        // Hacer una función que devuelva el menor de 16 enteros, solo tiene que ocupar una línea
+
+        /*public static int PrintMin16(int menor4)
+        {
+            return menor4(menor4(n1,n2,n3,n4),menor4(n5,n6,n7,n8),menor4(n9,n10,n11,n12),menor4(n13,n14,n15,n16));
+        }*/
+
+        // Hacer una función que se le pase un entero e imprima algo como lo siguiente : funcion (3) *** | funcion (4) ****
+        //                                                                                           +++               ****                         
+        //                                                                                           ***               **** 
+
+        public static void PrintFormas(int n)
+        {
+            for (int r = 0; r < n; r++)
+            {
+                for (int c = 0; c < n; c++)
+                {
+                    if((r%2)==0)
+                    System.Console.Write("*");
+                    else
+                    System.Console.Write("+");
+                }
+                System.Console.WriteLine("");
+            }
+        }
+
+        // "                                                                          ":  *+*+
+
+        public static void PrintFormas1(int n)
+        {
+            for (int r= 0; r < n; r++)
+            {
+                for (int c = 0; c < n; c++)
+                {
+                    int flag = r + c;
+                    if ((flag % 2) == 0)
+                        System.Console.Write("*");
+                    else
+                        System.Console.Write("+");
+                }
+                System.Console.WriteLine("");
+            }
+            
+        }
+
+        // "                                                                          ":  *
+        //                                                                                **
+        //                                                                                *** 
+        //                                                                                ****
+        
+        public static void PrintFormas2(int n)
+        {
+            for (int r = 0; r < n; r++)
+            {
+                for (int c = 0; c <= r ; c++)
+                        System.Console.Write("*");
+                System.Console.WriteLine("");
+            }
+        }
+
+        // "                                                                          ":      *
+        //                                                                                   **
+        //                                                                                  ***
+        //                                                                                 **** 
+        
+        public static void PrintFormas3(int n)
+        {
+            for (int r = 0; r < n; r++)
+            {
+                int nespacios = n-r-1;
+                int nasteriscos = r+1;
+                for (int c = 0; c <= r; c++)
+                    System.Console.Write("*");
+                System.Console.WriteLine("");
+            }
+        }
+
     }
 }
