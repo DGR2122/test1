@@ -189,6 +189,14 @@ namespace Prueba
         //                                                                                           ***               ****                         
         //                                                                                           ***               **** 
 
-
+        public static void PrintAsteriscosFormas(int n)
+        {
+            for (int i = 0; i < 3; i++) 
+            {
+                for (int j = 1; j <= n; j++) 
+                    Console.Write("*", j);
+                Console.WriteLine(" ");
+            }
+        }
     }
 }

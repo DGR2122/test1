@@ -43,8 +43,9 @@ namespace Prueba
             EjerciciosExamen.Min4(3, 5, 2, 8);
             EjerciciosExamen.PrintSerie2(10);
             EjerciciosExamen.PrintSerie3(10);
-            EjerciciosExamen.PrintAsteriscos(2);*/
-            EjerciciosExamen.PrintAsteriscos2(4);
+            EjerciciosExamen.PrintAsteriscos(2);
+            EjerciciosExamen.PrintAsteriscos2(4);*/
+            EjerciciosExamen.PrintAsteriscosFormas(3);
 
         }
     }
