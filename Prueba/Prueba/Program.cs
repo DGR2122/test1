@@ -48,8 +48,14 @@ namespace Prueba
             EjerciciosExamen.PrintAsteriscosFormas(4);
             EjerciciosExamen.PrintFormas(4);
             EjerciciosExamen.PrintFormas1(4);
-            EjerciciosExamen.PrintFormas2(4);*/
+            EjerciciosExamen.PrintFormas2(4);
             EjerciciosExamen.PrintFormas3(4);
+            EjerciciosExamen.Divisoresdesde1(10);
+            EjerciciosExamen.PiramideAsteriscos(5);
+            EjerciciosExamen.PiramideAsteriscosInvertida(5);
+            EjerciciosExamen.Rombo(5);
+            EjerciciosExamen.ElevadoADos(7);*/
+            EjerciciosExamen.USA_Flag();                       
         }
     }
 }

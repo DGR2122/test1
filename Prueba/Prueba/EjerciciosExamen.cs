@@ -191,9 +191,9 @@ namespace Prueba
 
         public static void PrintAsteriscosFormas(int n)
         {
-            for (int i = 0; i < n; i++) 
+            for (int i = 0; i < n; i++)
             {
-                for (int j = 0; j < n; j++) 
+                for (int j = 0; j < n; j++)
                     System.Console.Write("*", j);
                 System.Console.WriteLine(" ");
             }
@@ -201,15 +201,15 @@ namespace Prueba
 
         // Hacer una función que devuelva el menor de 16 enteros, solo tiene que ocupar una línea
 
-        /*public static int PrintMin16(int menor4)
+        public static int PrintMin16(int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n8, int n9, int n10, int n11, int n12, int n13, int n14, int n15, int n16)
         {
-            return menor4(menor4(n1,n2,n3,n4),menor4(n5,n6,n7,n8),menor4(n9,n10,n11,n12),menor4(n13,n14,n15,n16));
-        }*/
+            return Min4(Min4(n1, n2, n3, n4), Min4(n5, n6, n7, n8), Min4(n9, n10, n11, n12), Min4(n13, n14, n15, n16));
+        }
 
         // Hacer una función que se le pase un entero e imprima algo como lo siguiente : funcion (3) *** | funcion (4) ****
         //                                                                                           +++               ****                         
         //                                                                                           ***               **** 
-
+        
         public static void PrintFormas(int n)
         {
             for (int r = 0; r < n; r++)
@@ -226,6 +226,7 @@ namespace Prueba
         }
 
         // "                                                                          ":  *+*+
+        // "                                                                          ":  +*+*    
 
         public static void PrintFormas1(int n)
         {
@@ -266,15 +267,153 @@ namespace Prueba
         
         public static void PrintFormas3(int n)
         {
-            for (int r = 0; r < n; r++)
+            for (int r = 0; r < n; r++) // filas
             {
-                int nespacios = n-r-1;
-                int nasteriscos = r+1;
-                for (int c = 0; c <= r; c++)
-                    System.Console.Write("*");
+                int nasteriscos = r + 1;
+                int nespacios = n - nasteriscos;
+                for (int c = 0; c < n; c++) // columnas
+                {
+                    if (c < nespacios)
+                        System.Console.Write(" "); 
+                    else
+                        System.Console.Write("*");
+                }
                 System.Console.WriteLine("");
             }
         }
 
+        // Hacer una función que imprima por pantalla todos los divisores desde 1 hasta el número que se le pase.
+
+        public static void Divisoresdesde1(int n)
+        {
+            for (int i = 1; i <= n; i++)
+            {
+                if (n % i == 0)
+                    System.Console.Write(i + ",");
+            }
+        }
+
+        // Hacer una función que se le pase un entero e imprima algo como lo siguiente
+        /*    ----**
+              ---*--*
+              --*----*
+              -*------*
+              *--------*
+        */
+
+        public static void PiramideAsteriscos(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+
+                int esp1 = n - i - 1;
+                int esp2 = i * 2;
+
+                for (int j = 0; j < esp1; j++)
+                {
+                    System.Console.Write("-");
+                }
+                System.Console.Write("*");
+
+                for (int j = 0; j < esp2; j++)
+                {
+                    System.Console.Write("-");
+                }
+                System.Console.Write("*");
+
+                System.Console.WriteLine();
+            }
+        }
+
+        // Hacer una función que se le pase un entero e imprima algo como lo siguiente
+        /*    *--------*
+              -*------*
+              --*----*
+              ---*--*
+              ----**
+        */
+
+        public static void PiramideAsteriscosInvertida(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+
+                int esp1 = i;
+                int esp2 = ((n - i) * 2) - 2;
+
+                for (int j = 0; j < esp1; j++)
+                {
+                    System.Console.Write("-");
+                }
+                System.Console.Write("*");
+
+                for (int j = 0; j < esp2; j++)
+                {
+                    System.Console.Write("-");
+                }
+                System.Console.Write("*");
+
+                System.Console.WriteLine();
+            }
+        }
+
+        // Hacer una función que se le pase un entero e imprima un rombo 
+        
+        public static void Rombo (int n)
+        {
+            EjerciciosExamen.PiramideAsteriscos(n);
+            EjerciciosExamen.PiramideAsteriscosInvertida(n);
+        }
+
+        // Hacer una función que eleve un entero a dos cuantas veces diga n
+
+        public static int ElevadoADos(int n)
+        {
+            int result = 1;
+            for (int i = 0; i < n; i++)
+            {
+                result = result * 2;
+            }
+
+            return result;
+        }
+
+        // Hacer una función que imprima la bandera de los Estados Unidos de América
+
+        public static void USA_Flag()
+        {
+            for (int r = 0; r < 10; r++)
+            {
+                for (int c = 0; c < 32; c++)
+                {
+                    if (c >= 0 && c <= 7 && r >= 0 && r <= 2)
+                    {
+                        if (r % 2 == 0)
+                        {
+                            if (c % 2 == 0)
+                                System.Console.Write("+");
+                            else
+                                System.Console.Write(" ");
+                        }
+                        else
+                        {
+                            if (c % 2 == 0)
+                                System.Console.Write(" ");
+                            else
+                                System.Console.Write("+");
+                        }
+                    }
+                    else if ((r / 2) % 2 == 0)
+                    {
+                        System.Console.Write("#");
+                    }
+                    else
+                    {
+                        System.Console.Write(" ");
+                    }
+                }
+                System.Console.WriteLine();
+            }
+        }
     }
 }
