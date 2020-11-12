@@ -54,8 +54,9 @@ namespace Prueba
             EjerciciosExamen.PiramideAsteriscos(5);
             EjerciciosExamen.PiramideAsteriscosInvertida(5);
             EjerciciosExamen.Rombo(5);
-            EjerciciosExamen.ElevadoADos(7);*/
-            EjerciciosExamen.USA_Flag();                       
+            EjerciciosExamen.ElevadoADos(7);
+            EjerciciosExamen.USA_Flag();*/
+            EjerciciosExamen.Sumatorio(5);
         }
     }
 }
