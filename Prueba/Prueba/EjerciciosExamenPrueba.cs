@@ -14,15 +14,12 @@ namespace Prueba
 
         public static void Ejercicio2c()
         {
-            int a = 0;
-            int b = 0;
-
             System.Console.WriteLine("Dime el primer número");
-            a = System.Convert.ToInt32(System.Console.ReadLine());
+            int a = System.Convert.ToInt32(System.Console.ReadLine());
 
 
             System.Console.WriteLine("Dime el segundo número");
-            b = System.Convert.ToInt32(System.Console.ReadLine()); 
+            int b = System.Convert.ToInt32(System.Console.ReadLine()); 
 
             if (a > 0 && b < 0)
             {
@@ -32,7 +29,7 @@ namespace Prueba
             {
                 System.Console.WriteLine("Los dos números son positivos");
             }
-            else if(a < 0 && b < 0)
+            else 
             {
                 System.Console.WriteLine("Ninguno de los números es positivo");
             }
