@@ -10,15 +10,10 @@ namespace Prueba
         {
             /*
             Ejercicios.Ejercicio1();
-
             Ejercicios.Ejercicio2(20);
-
             Ejercicios.Ejercicio03(657);
-
             Ejercicios.Ejercicio04(5);
-
             Ejercicios.Ejercicio05(10);
-
             Ejercicios.Ejercicio06(23);
 
             Student s1, s2;
@@ -30,6 +25,7 @@ namespace Prueba
 
             string ss = s1.getNameTwice();
             */
+
             /*
             EjerciciosExamen.Suma(2,2);
             EjerciciosExamen.Resta(2,2);
@@ -55,8 +51,13 @@ namespace Prueba
             EjerciciosExamen.PiramideAsteriscosInvertida(5);
             EjerciciosExamen.Rombo(5);
             EjerciciosExamen.ElevadoADos(7);
-            EjerciciosExamen.USA_Flag();*/
+            EjerciciosExamen.USA_Flag();
             EjerciciosExamen.Sumatorio(5);
+            */
+
+            /*
+            EjerciciosExamenPrueba.Ejercicio1a(3000);*/
+            EjerciciosExamenPrueba.Ejercicio2c();
         }
     }
 }
