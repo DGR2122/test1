@@ -56,8 +56,10 @@ namespace Prueba
             */
 
             /*
-            EjerciciosExamenPrueba.Ejercicio1a(3000);*/
+            EjerciciosExamenPrueba.Ejercicio1a(3000);
             EjerciciosExamenPrueba.Ejercicio2c();
+            EjerciciosExamenPrueba.Ejercicio3a(1,5,7);*/
+            EjerciciosExamenPrueba.Ejercicio4b(2);
         }
     }
 }
