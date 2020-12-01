@@ -58,7 +58,7 @@ namespace Prueba
             {
                 return b;
             }
-            //else (c > a && c > b)
+            else
             {
                 return c;
             }
