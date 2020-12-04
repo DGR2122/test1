@@ -12,6 +12,12 @@ namespace Prueba
             return a / metros;           
         }
 
+        public static double Ejercicio1b(double a)
+        {
+            double celsius = 273;
+            return a + celsius * 18 / 10 + 32;
+        }
+
         public static void Ejercicio2c()
         {
             System.Console.WriteLine("Dime el primer número");
@@ -82,6 +88,74 @@ namespace Prueba
             }
         }
 
+        public static void Ejercicio6a(int n)
+        {
+            int result = 0;
+
+            while (n != 0)
+            {
+                System.Console.WriteLine("Dime el número al que quieres hacer al cuadrado");
+                n = System.Convert.ToInt32(System.Console.ReadLine());
+
+                result = n * n;
+
+                System.Console.WriteLine("El resultado es " + result);
+            }
+        }
+
+        public static void Ejercicio7b(int n)
+        {
+            int a = 0;
+            int b = 0;
+
+            System.Console.WriteLine("Dime el primer número");
+            a = System.Convert.ToInt32(System.Console.ReadLine());
+
+            System.Console.WriteLine("Dime el segundo número");
+            b = System.Convert.ToInt32(System.Console.ReadLine());
+
+            n = a;
+            n = b;
+
+            for (int i = 2; i < n / 2; i++)
+            {
+                if (a % i == 0 && b % i == 0)
+                {
+                    System.Console.Write(i + ", ");
+                }
+            }
+        }
+
+        public static void Ejercicio8()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = i - 3; j < i + 10; j += 3)
+                {
+                    if (i == j)
+                        break;
+                    else if (j == 3)
+                        continue;
+                    System.Console.Write(1 + i + j * 2);
+                }
+            }
+        }
+
+        public static void Ejercicio9a(int n)
+        {
+
+            System.Console.WriteLine("Dime el primer número");
+            n = System.Convert.ToInt32(System.Console.ReadLine());
+
+            for (int i = 2; i <= n; i++)
+            {
+                while (n % i == 0)
+                {
+                    System.Console.Write("Los factores primos de " + n + " es/son " + i);
+                    break;
+                }
+            }
+        }
     }
 }
 

@@ -56,10 +56,16 @@ namespace Prueba
             */
 
             /*
-            EjerciciosExamenPrueba.Ejercicio1a(3000);
-            EjerciciosExamenPrueba.Ejercicio2c();*/
+            EjerciciosExamenPrueba.Ejercicio1a(3000);*/
+            EjerciciosExamenPrueba.Ejercicio1b(15);
+            /*
+            EjerciciosExamenPrueba.Ejercicio2c();
             EjerciciosExamenPrueba.Ejercicio3a(1,5,7);
-            //EjerciciosExamenPrueba.Ejercicio4b(2);
+            EjerciciosExamenPrueba.Ejercicio4b(2);
+            EjerciciosExamenPrueba.Ejercicio6a(3);
+            EjerciciosExamenPrueba.Ejercicio7b(5);
+            EjerciciosExamenPrueba.Ejercicio8();
+            EjerciciosExamenPrueba.Ejercicio9a(60);*/
         }
     }
 }
